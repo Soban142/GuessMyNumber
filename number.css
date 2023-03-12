@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Scientific Calculator LCD', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+
+.gameLogic{
+    padding: 10px 0  10px 0;
+}
+
+.againbtn{
+    padding: 10px 30px 10px 30px;
+    border: none;
+    background-color: white;
+    font-size: 2rem;
+}
+
+.guess{
+    word-spacing: 10px;
+}
+
+.numberGuessedPosition{
+    position: relative;
+}
+
+.numberGuessed{
+    height: 100px;
+    width: 100px;
+    background-color: white; 
+    opacity: 1; 
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    z-index: 2;
+}
+
+.questionMark{
+    padding: 20px 0px 20px 20px;
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}
+
+.inputNumber{
+    height: 50px;
+    width: 300px;
+    
+}
+
+.checkbtn{
+    margin-top: 20px;
+    width: 250px;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    background-color: white;
+    font-size: 2rem;
+}
+
+.score{
+    font-size: larger;
+}
+
+.highscore{
+    font-size: larger;
+}
