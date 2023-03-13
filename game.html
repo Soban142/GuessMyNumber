@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./game.css">
+</head>
+<body>
+    <div class="topbar">
+        <div class="topbar-left">
+            <a href="./guessthenumber.html"><button class="exit">Exit Game!</button></a>
+        </div>
+        <div class="topbar-right">
+            <h3>(Between 1 and 20)</h3>
+        </div>
+    </div>
+    <div class="text">
+        <h1>Guess My Number</h1>
+    </div>
+
+    <div class="guessing">
+        <div class="line"></div>
+        <div class="box">
+            <h1 style="color: white;" class="randomNumber">?</h1>
+        </div>
+    </div>
+
+    <div class="guessedNumber">
+        <h3 class="alert">Guessed Number...</h3>
+    </div>
+    
+<div class="verdict">
+    <div class="guessingNumber">
+        <input type="number" class="inputNumber">
+        <button class="guessbtn">Guess!</button>
+    </div>
+    <div>
+        <h3 class="triesH">Tries: <span class="tries">20</span></h3>
+        <h3 class="highscoreH">HighScore: <span class="highScore">0</span> </h3>
+    </div>
+</div>
+
+
+
+<script src="./game.js"></script>
+</body>
+</html>

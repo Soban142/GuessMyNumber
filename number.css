@@ -5,70 +5,82 @@
 }
 
 body{
-    font-family: 'Scientific Calculator LCD', sans-serif;
+    font-family: 'GAME', sans-serif; 
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start{
+    margin: 20px 0 10px 0;
+    padding: 10px;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.start:hover{
+    transform: scale(1.1);
+}
+
+.logic{
+    padding: 10px;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.logic:hover{
+    transform: scale(1.1);
+}
+
+.modal{
     background-color: black;
+    height: 500px;
+    width: 400px;
+    margin: 20px auto 0 auto;
+}
+
+.hidden{
+    display: none;
+}
+
+.modal p {
     color: white;
+    text-align: justify;
+    padding: 30px 20px 0 20px;
 }
 
-
-.gameLogic{
-    padding: 10px 0  10px 0;
+.close{
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.againbtn{
-    padding: 10px 30px 10px 30px;
+.closeBtn{
+    margin-right: 10px;
+    padding: 10px;
     border: none;
-    background-color: white;
-    font-size: 2rem;
+    border-radius: 15px;
+    transition-property: all;
+    transition-duration: 0.5s;
 }
 
-.guess{
-    word-spacing: 10px;
+.closeBtn:hover{
+    background-color: red;
+    color: white;
+    transform: scale(1.2);
 }
 
-.numberGuessedPosition{
-    position: relative;
-}
 
-.numberGuessed{
-    height: 100px;
-    width: 100px;
-    background-color: white; 
-    opacity: 1; 
-    margin: 0;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 50%;
-    z-index: 2;
-}
 
-.questionMark{
-    padding: 20px 0px 20px 20px;
-    font-size: 32px;
-    font-weight: bold;
-    color: black;
-}
-
-.inputNumber{
-    height: 50px;
-    width: 300px;
-    
-}
-
-.checkbtn{
-    margin-top: 20px;
-    width: 250px;
-    padding: 10px 30px 10px 30px;
-    border: none;
-    background-color: white;
-    font-size: 2rem;
-}
-
-.score{
-    font-size: larger;
-}
-
-.highscore{
-    font-size: larger;
-}
