@@ -4,6 +4,7 @@ var guessBtn = document.querySelector('.guessbtn')
 var tries = document.querySelector('.tries')
 var highScore = document.querySelector('.highScore')
 var message = document.querySelector('.alert')
+var newGame = document.querySelector('.new')
 
 
 guessBtn.addEventListener('click', () =>{
@@ -35,7 +36,11 @@ else if(userInputtedNumber.value < numberGenerated){
 
 else{
     message.textContent = "You lost"
+    alert('Game Over')
 }
 
 })
 
+// newGame.addEventListener('click', () => {
+//     location.reload(true);
+// })

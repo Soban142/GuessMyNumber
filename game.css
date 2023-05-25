@@ -11,7 +11,7 @@
     align-items: center;
 }
 
-.exit{
+.btn{
     margin-left: 10px;
     padding: 10px;
     font-size: large;
@@ -20,9 +20,10 @@
     transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: ease;  
+    cursor: pointer;
 }
 
-.exit:hover{
+.btn:hover{
     transform: scale(1.1);
 }
 
@@ -81,6 +82,7 @@
     transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: ease;
+    cursor: pointer;
 }
 
 .guessbtn:hover{
@@ -102,4 +104,26 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 30px;
+}
+
+
+@media screen and (max-width: 480px) {
+    .topbar{
+        display: block;
+    }
+
+    .topbar-right h3{
+        margin: 10px auto;  
+    }
+
+    .topbar-left{
+        width: 100vw;
+        position: absolute;
+        bottom: 150px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.6rem;
+        justify-content: center;
+        align-items: center;
+    }
 }
